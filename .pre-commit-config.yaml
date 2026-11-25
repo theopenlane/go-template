@@ -9,11 +9,14 @@ repos:
     hooks:
       - id: trailing-whitespace
       - id: detect-private-key
+      - id: check-shebang-scripts-are-executable
+      - id: end-of-file-fixer
+      - id: mixed-line-ending
   - repo: https://github.com/google/yamlfmt
-    rev: v0.17.2
+    rev: v0.21.0
     hooks:
       - id: yamlfmt
   - repo: https://github.com/adhtruong/mirrors-typos
-    rev: v1.37.0
+    rev: v1.52.2
     hooks:
       - id: typos
